@@ -1,0 +1,15 @@
+
+  <h4>Identifiant</h4>
+  <div>L'identifiant permet de reconnaitre votre espace de façon unique sur la plateforme.</div>
+
+  <form [formGroup]="form">
+    <div class="mt-3">
+      <mat-form-field style="width: 100%">
+        <input type="text" matInput placeholder="Identifiant" formControlName="identifier">
+      </mat-form-field>
+    </div>
+  </form>
+
+  <div class="align-end">
+    <button mat-flat-button color="primary" (click)="next()">Suivant</button>
+  </div>

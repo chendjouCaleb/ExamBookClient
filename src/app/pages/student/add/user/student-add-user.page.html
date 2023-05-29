@@ -1,0 +1,15 @@
+
+  <h4>Utilisateur</h4>
+  <div>Si l'étudiant que vous souhaitez ajouter possède un compte, renseignez son E-mail ou son nom d'utilisateur.</div>
+
+  <form [formGroup]="form">
+    <div class="mt-3">
+      <mat-form-field style="width: 100%">
+        <input type="text" matInput placeholder="E-mail ou nom d'utilisateur" formControlName="userId">
+      </mat-form-field>
+    </div>
+  </form>
+
+  <div class="align-end">
+    <button mat-flat-button color="primary" (click)="next()">Suivant</button>
+  </div>

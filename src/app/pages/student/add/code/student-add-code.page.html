@@ -1,0 +1,19 @@
+<div class="d-flex align-items-center">
+  <button (click)="back()" mat-icon-button><mat-icon>arrow_back</mat-icon>  </button>
+  <span class="me-3"></span>
+  <span style="font-size: 16px; font-weight: 400;">Matricule</span>
+</div>
+
+  <div class="mt-4">Assignez un matricule unique à cet étudiant.</div>
+
+  <form [formGroup]="form" class="mt-3">
+    <div >
+      <mat-form-field style="width: 100%">
+        <input type="text" matInput placeholder="Matricule" formControlName="code">
+      </mat-form-field>
+    </div>
+  </form>
+
+  <div class="align-end">
+    <button mat-flat-button color="primary" (click)="next()">Suivant</button>
+  </div>

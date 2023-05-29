@@ -1,0 +1,19 @@
+
+<div class="d-flex align-items-center">
+  <button (click)="back()" mat-icon-button><mat-icon>arrow_back</mat-icon>  </button>
+  <span class="me-3"></span>
+  <span style="font-size: 16px; font-weight: 400;">Photo de profile</span>
+</div>
+
+  <div class="d-flex align-items-center flex-column py-3 mt-3" style="background: rgba(248,246,246,0.79);border-radius: 8px">
+    <img src="/assets/icons/picture.png" alt="" width="256" height="256">
+
+    <div class="align-center ">
+      <button mat-stroked-button color="primary">Choisir une photo</button>
+    </div>
+  </div>
+
+
+  <div class="align-end mt-4">
+    <button mat-flat-button color="primary" (click)="next()">Suivant</button>
+  </div>

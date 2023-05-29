@@ -1,0 +1,42 @@
+$ms-color-gray200: #1b1a19;
+$ms-color-gray180: #252423;
+$ms-color-gray160: #323130;
+$ms-color-gray140: #484644;
+$ms-color-gray120: #797775;
+$ms-color-gray100: #979593;
+$ms-color-gray80: #b3b0ad;
+$ms-color-gray60: #c8c6c4;
+$ms-color-gray40: #e1dfdd;
+$ms-color-gray20: #e1dfdd;
+
+.text-color-1 { color: $ms-color-gray200; }
+.text-color-2 { color: $ms-color-gray180; }
+.text-color-3 { color: $ms-color-gray160; }
+.text-color-4 { color: $ms-color-gray140; }
+.text-color-5 { color: $ms-color-gray120; }
+.text-color-6 { color: $ms-color-gray100; }
+.text-color-7 { color: $ms-color-gray80; }
+.text-color-8 { color: $ms-color-gray60; }
+.text-color-9 { color: $ms-color-gray40; }
+.text-color-10 { color: $ms-color-gray20; }
+
+
+
+.fontSize-24 { font-size: 24px; }
+.fontSize-20 { font-size: 20px; }
+.fontSize-18 { font-size: 18px; }
+.fontSize-16 { font-size: 16px; }
+
+
+.description-list {
+  & dt {
+    color: #1F1F1F;
+    font-size: 12px;
+    font-weight: 500 !important;
+  }
+
+  & dd {
+    color: #444746;
+    font-size: 14px;
+  }
+}

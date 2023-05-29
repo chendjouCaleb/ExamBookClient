@@ -1,0 +1,25 @@
+
+<div class="d-flex align-items-center">
+  <button (click)="back()" mat-icon-button><mat-icon>arrow_back</mat-icon>  </button>
+  <span class="me-3"></span>
+  <span style="font-size: 16px; font-weight: 400;">Informations</span>
+</div>
+
+
+  <form [formGroup]="form">
+    <div class="mt-3">
+      <mat-form-field style="width: 100%">
+        <input type="text" matInput placeholder="Nom de l'espace" formControlName="name">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-checkbox class="example-margin" color="primary" formControlName="isPublic">
+        Espace publique
+      </mat-checkbox>
+    </div>
+  </form>
+
+  <div class="align-end">
+    <button mat-flat-button color="primary" (click)="next()">Suivant</button>
+  </div>

@@ -1,0 +1,48 @@
+
+<div class="d-flex align-items-center">
+  <button (click)="back()" mat-icon-button><mat-icon>arrow_back</mat-icon>  </button>
+  <span class="me-3"></span>
+  <span style="font-size: 16px; font-weight: 400;">Informations</span>
+</div>
+
+
+  <form [formGroup]="form">
+    <div class="mt-3 d-flex">
+      <mat-form-field style="width: 100%">
+        <mat-label>Nom de l'étudiant</mat-label>
+        <input type="text" matInput placeholder="Nom" formControlName="firstName">
+      </mat-form-field>
+    </div>
+
+    <div class="mt-3">
+      <mat-form-field style="width: 100%" >
+        <mat-label>Prénom de l'étudiant</mat-label>
+        <input type="text" matInput placeholder="Prénom" formControlName="lastName">
+      </mat-form-field>
+    </div>
+
+
+
+    <mat-form-field style="width: 100%;">
+      <mat-label>Date de naissance</mat-label>
+      <input type="text" matInput formControlName="birthDate" required
+             (click)="birthDatePicker.open()"
+             [matDatepicker]="birthDatePicker">
+      <mat-datepicker-toggle matIconSuffix [for]="birthDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker #birthDatePicker></mat-datepicker>
+    </mat-form-field>
+
+    <div>
+      <mat-form-field style="width: 100%;">
+        <mat-label>Sexe</mat-label>
+        <mat-select formControlName="sex" required>
+          <mat-option value="M">Homme</mat-option>
+          <mat-option value="F">Femme</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </form>
+
+  <div class="align-end">
+    <button mat-flat-button color="primary" (click)="next()">Suivant</button>
+  </div>

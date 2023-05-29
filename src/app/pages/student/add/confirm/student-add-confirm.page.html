@@ -1,0 +1,38 @@
+
+<div class="d-flex align-items-center">
+  <button (click)="back()" mat-icon-button><mat-icon>arrow_back</mat-icon>  </button>
+  <span class="me-3"></span>
+  <span style="font-size: 16px; font-weight: 400;">Récapitulatif</span>
+</div>
+
+  <div class="description-list mt-3">
+    <dl>
+      <dt>Nom</dt>
+      <dd>{{remember.firstName}}</dd>
+    </dl>
+
+    <dl>
+      <dt>Prénom</dt>
+      <dd>{{remember.lastName}}</dd>
+    </dl>
+
+    <dl>
+      <dt>Date de naissance</dt>
+      <dd>{{remember.birthDate}}</dd>
+    </dl>
+
+    <dl>
+      <dt>Sexe</dt>
+      <dd>{{remember.sex == 'm' ? 'Masculin' : 'Féminin'}}</dd>
+    </dl>
+
+    <dl>
+      <dt>Matricule</dt>
+      <dd>{{remember.code}}</dd>
+    </dl>
+  </div>
+
+
+  <div class="align-end">
+    <button mat-flat-button color="primary" (click)="next()">Suivant</button>
+  </div>
